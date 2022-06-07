@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestNG Sessions Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="2" parallel="tests" name="SauceLabsDemo Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.saucedemo.com/"/>
+    <classes>
+      <class name="com.saucelabs.qa.tests.DemoTest">
+        <methods>
+          <include name="Verify_text_msg"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.saucelabs.qa.tests.DemoTest -->
+    </classes>
+  </test> <!-- SauceLabsDemo Test(failed) -->
+</suite> <!-- Failed suite [TestNG Sessions Suite] -->

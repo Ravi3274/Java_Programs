@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestNG_Sessions_Suite" class="navigator-link">
+              <span class="suite-name border-passed">TestNG Sessions Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestNG_Sessions_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestNG_Sessions_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestNG_Sessions_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestNG_Sessions_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestNG_Sessions_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestNG_Sessions_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestNG_Sessions_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestNG_Sessions_Suite" class="hide-methods passed suite-TestNG_Sessions_Suite"> (hide)</a> <!-- hide-methods passed suite-TestNG_Sessions_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Sessions_Suite" class="show-methods passed suite-TestNG_Sessions_Suite"> (show)</a> <!-- show-methods passed suite-TestNG_Sessions_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestNG_Sessions_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Add_Random_Items">Add_Random_Items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Add_To_Cart">Add_To_Cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Checkout">Checkout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Fill_Details">Fill_Details</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Payment_Information">Payment_Information</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Remove_Second_Item">Remove_Second_Item</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Verify_Price">Verify_Price</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="Verify_text_msg">Verify_text_msg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Sessions_Suite" title="com.saucelabs.qa.tests.DemoTest" class="method navigator-link" hash-for-method="finish_button">finish_button</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNG_Sessions_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNG_Sessions_Suite" class="panel TestNG_Sessions_Suite">
+          <div class="suite-TestNG_Sessions_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucelabs.qa.tests.DemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add_Random_Items">
+                  </a> <!-- Add_Random_Items -->
+                  <span class="method-name">Add_Random_Items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add_To_Cart">
+                  </a> <!-- Add_To_Cart -->
+                  <span class="method-name">Add_To_Cart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Checkout">
+                  </a> <!-- Checkout -->
+                  <span class="method-name">Checkout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fill_Details">
+                  </a> <!-- Fill_Details -->
+                  <span class="method-name">Fill_Details</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Payment_Information">
+                  </a> <!-- Payment_Information -->
+                  <span class="method-name">Payment_Information</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Remove_Second_Item">
+                  </a> <!-- Remove_Second_Item -->
+                  <span class="method-name">Remove_Second_Item</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Price">
+                  </a> <!-- Verify_Price -->
+                  <span class="method-name">Verify_Price</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_text_msg">
+                  </a> <!-- Verify_text_msg -->
+                  <span class="method-name">Verify_text_msg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="finish_button">
+                  </a> <!-- finish_button -->
+                  <span class="method-name">finish_button</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Sessions_Suite-class-passed -->
+        </div> <!-- panel TestNG_Sessions_Suite -->
+        <div panel-name="test-xml-TestNG_Sessions_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/ravi.singh/Documents/SauceLabs_Demo/Sauce_Labs_Demo_Project/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestNG Sessions Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;SauceLabsDemo Test&quot; verbose=&quot;4&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.saucedemo.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saucelabs.qa.tests.DemoTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SauceLabsDemo Test --&gt;
+&lt;/suite&gt; &lt;!-- TestNG Sessions Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNG_Sessions_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNG Sessions Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SauceLabsDemo Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNG_Sessions_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNG Sessions Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNG_Sessions_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNG Sessions Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNG_Sessions_Suite');
+function tableData_TestNG_Sessions_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Login')
+data.setCell(0, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(0, 3, 256);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Fill_Details')
+data.setCell(1, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(1, 3, 230);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Add_Random_Items')
+data.setCell(2, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(2, 3, 126);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Verify_Price')
+data.setCell(3, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(3, 3, 80);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Verify_text_msg')
+data.setCell(4, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(4, 3, 59);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Payment_Information')
+data.setCell(5, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(5, 3, 46);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Checkout')
+data.setCell(6, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(6, 3, 43);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'finish_button')
+data.setCell(7, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(7, 3, 42);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Add_To_Cart')
+data.setCell(8, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(8, 3, 39);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Remove_Second_Item')
+data.setCell(9, 2, 'com.saucelabs.qa.tests.DemoTest')
+data.setCell(9, 3, 33);
+window.suiteTableData['TestNG_Sessions_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Sessions_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 954 ms</span>
+              <div id="times-div-TestNG_Sessions_Suite">
+              </div> <!-- times-div-TestNG_Sessions_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNG_Sessions_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNG Sessions Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNG_Sessions_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNG_Sessions_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucelabs.qa.tests.DemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp(chrome, https://www.saucedemo.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Login</span>
+                <span class="method-start">3352 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Add_Random_Items</span>
+                <span class="method-start">3611 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Add_To_Cart</span>
+                <span class="method-start">3738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Remove_Second_Item</span>
+                <span class="method-start">3778 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Checkout</span>
+                <span class="method-start">3811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fill_Details</span>
+                <span class="method-start">3855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Payment_Information</span>
+                <span class="method-start">4085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_Price</span>
+                <span class="method-start">4132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">finish_button</span>
+                <span class="method-start">4213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_text_msg</span>
+                <span class="method-start">4256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">4315 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
